@@ -3,11 +3,10 @@ const weight = Number(prompt("Enter your weight in kilograms"));
 const height = Number(prompt("Enter your height in centimeters"));
 const bmi = getBMI(weight,height); //allows us to use this data for results 
 
-/*function getBMI(weight,height){
-const bmi = weight/((height/100)*(height/100));
-return bmi;
+function getBMI(weight,height){
+return weight/((height/100)*(height/100));
 }
-console.log(getBMI(weight,height));*/ //without console, no results will be shown
+console.log(getBMI(weight,height)); //without console, no results will be shown
 
 function result (bmi) { //conditional statements 
 if (bmi < 18.5) {
@@ -20,10 +19,4 @@ if (bmi < 18.5) {
     console.log("Obese")
 }
 }
-result();
-
-function getBMI(weight,height){
-   console.log (weight/((height/100)*(height/100)));
-    }
- getBMI();
- 
+result(); //dont touch
