@@ -1,23 +1,29 @@
+const name = prompt("Enter your name");
 const weight = Number(prompt("Enter your weight in kilograms"));
-const height = Number(prompt("Enter your height in meters"));
+const height = Number(prompt("Enter your height in centimeters"));
+const bmi = getBMI(weight,height); //allows us to use this data for results 
 
-function cal(x,y){
-console.log(x/(y^2));
+/*function getBMI(weight,height){
+const bmi = weight/((height/100)*(height/100));
+return bmi;
 }
-cal(weight,height);
+console.log(getBMI(weight,height));*/ //without console, no results will be shown
 
-/*function init(){
-const cal = cal();
-healthy(BMI);
-}*/
-
-/* function test(x) {
-    if (x <10 ) {
-    console.log("less");
-} else if (x>15) {
-    console.log("big ole number");
+function result (bmi) { //conditional statements 
+if (bmi < 18.5) {
+    console.log("Underweight");
+} else if (bmi >= 18.5 && bmi <= 24.9) {
+    console.log("Healthy weight");
+} else if (bmi >= 35 && bmi <= 29.9) {
+    console.log("Overweight")
 } else {
-    console.log("something else")
+    console.log("Obese")
 }
 }
-test (3); */
+result();
+
+function getBMI(weight,height){
+   console.log (weight/((height/100)*(height/100)));
+    }
+ getBMI();
+ 
