@@ -19,4 +19,4 @@ if (bmi < 18.5) {
     console.log("Obese")
 }
 }
-result(); //displays the result of the function
+result(bmi); //displays the result of the function
