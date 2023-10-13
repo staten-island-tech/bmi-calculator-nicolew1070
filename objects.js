@@ -41,5 +41,13 @@ const numbers = [1,2,3,4,5,6,7,8,9];
 //console.log(numbers[numbers.length - 1]);
 //arrow function ()=> auto returns output, this keyword points global
 /*numbers.forEach((number,index)=> console.log(number,index))*///runs a function for each item in the array 
-const graduated= students.filter((students)=>students.graduated === true);
-console.log(graduated);
+/*const graduated= students.filter((students)=>students.graduated === true);
+console.log(graduated);*/
+
+students.forEach((students) => 
+students.siblings.forEach((sib) => console.log(sib))
+);
+
+students
+.filter((student)=>student.graduated)
+.forEach((el)=>console.log(el.firstName));
