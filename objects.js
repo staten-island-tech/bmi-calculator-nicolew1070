@@ -36,7 +36,7 @@ const students = [
     },
 ];
 
-const numbers = [1,2,3,4,5,6,7,8,9];
+/*const numbers = [1,2,3,4,5,6,7,8,9];*/
 //index starts at 0
 //console.log(numbers[numbers.length - 1]);
 //arrow function ()=> auto returns output, this keyword points global
@@ -45,9 +45,9 @@ const numbers = [1,2,3,4,5,6,7,8,9];
 console.log(graduated);*/
 
 students.forEach((students) => 
-students.siblings.forEach((sib) => console.log(sib))
+students.firstName.forEach((name) => console.log(name))
 );
 
-students
+/*students
 .filter((student)=>student.graduated)
-.forEach((el)=>console.log(el.firstName));
+.forEach((el)=>console.log(el.firstName));*/
