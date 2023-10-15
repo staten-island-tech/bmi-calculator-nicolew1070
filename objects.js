@@ -44,10 +44,10 @@ const students = [
 /*const graduated= students.filter((students)=>students.graduated === true);
 console.log(graduated);*/
 
-students.forEach((students) => 
+/*students.forEach((students) => 
 students.firstName.forEach((name) => console.log(name))
-);
+);*/
 
-/*students
+students
 .filter((student)=>student.graduated)
-.forEach((el)=>console.log(el.firstName));*/
+.forEach((el)=>console.log(el.firstName));
